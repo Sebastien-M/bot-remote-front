@@ -45,7 +45,7 @@ document.querySelector("#flashoff").addEventListener("click", function() {
 
 function up() {
     const req = new XMLHttpRequest();
-    req.open('POST', 'http://localhost:3001/robot/forward', false);
+    req.open('POST', 'http://127.0.0.1:3001/robot/forward', false);
     req.send();
     if (req.status === 200) {
         console.log("Réponse reçue: %s", req.responseText);
@@ -56,7 +56,7 @@ function up() {
 
 function down() {
     const req = new XMLHttpRequest();
-    req.open('POST', 'http://localhost:3001/robot/back', false);
+    req.open('POST', 'http://127.0.0.1:3001/robot/back', false);
     req.send();
     if (req.status === 200) {
         console.log("Réponse reçue: %s", req.responseText);
@@ -67,7 +67,7 @@ function down() {
 
 function left() {
     const req = new XMLHttpRequest();
-    req.open('POST', 'http://localhost:3001/robot/left', false);
+    req.open('POST', 'http://127.0.0.1:3001/robot/left', false);
     req.send();
     if (req.status === 200) {
         console.log("Réponse reçue: %s", req.responseText);
@@ -78,7 +78,7 @@ function left() {
 
 function right() {
     const req = new XMLHttpRequest();
-    req.open('POST', 'http://localhost:3001/robot/right', false);
+    req.open('POST', 'http://127.0.0.1:3001/robot/right', false);
     req.send();
     if (req.status === 200) {
         console.log("Réponse reçue: %s", req.responseText);
@@ -89,7 +89,7 @@ function right() {
 
 function stop() {
     const req = new XMLHttpRequest();
-    req.open('POST', 'http://localhost:3001/robot/stop', false);
+    req.open('POST', 'http://127.0.0.1:3001/robot/stop', false);
     req.send();
     if (req.status === 200) {
         console.log("Réponse reçue: %s", req.responseText);
