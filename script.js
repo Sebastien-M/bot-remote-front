@@ -23,7 +23,7 @@ document.addEventListener('keydown', function(e) {
 
 document.querySelector("#flash").addEventListener("click", function() {
     const req = new XMLHttpRequest();
-    req.open('POST', 'http://192.168.1.2:8080/enabletorch', false);
+    req.open('POST', 'http://sebastienmandaba.com:8080/enabletorch', false);
     req.send();
     if (req.status === 200) {
         console.log("Réponse reçue: %s", req.responseText);
@@ -34,7 +34,7 @@ document.querySelector("#flash").addEventListener("click", function() {
 
 document.querySelector("#flashoff").addEventListener("click", function() {
     const req = new XMLHttpRequest();
-    req.open('POST', 'http://192.168.1.2:8080/disabletorch', false);
+    req.open('POST', 'http://sebastienmandaba.com:8080/disabletorch', false);
     req.send();
     if (req.status === 200) {
         console.log("Réponse reçue: %s", req.responseText);
